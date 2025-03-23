@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+div#root {
+    border: 2px solid red solid red;
+    width: 85%;
+    margin: 0 auto 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    /* border2px solid red solid green; */
+}
+
+#first-box {
+    display: flex;
+    /* border2px solid red solid purple; */
+}
+
+#first-box,
+#second-box {
+    width: 50%;
+}
+
+#img-container {
+    display: flex;
+    align-items: baseline;
+    /* border2px solid red solid black; */
+}
+
+#img-container img {
+    mix-blend-mode: multiply;
+    width: 30px;
+    height: 30px;
+}
+
+#img-container h4 {
+    font-size: 40px;
+    margin-left: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#first-box nav {
+    /* border2px solid red solid green; */
+    width: 70%;
+}
+
+#first-box nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    /* border2px solid red solid red; */
+}
+
+#first-box nav ul li {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: lighter;
+}
+
+#second-box {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    /* border2px solid red solid rgb(73, 1, 255); */
+}
+
+#second-box ul {
+    width: 70%;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#second-box ul li button#sign-btn {
+    background-color: transparent;
+    border: none;
+    font-weight: 550;
+}
+
+#second-box ul li button.sales-btn {
+    background-color: transparent;
+    border: none;
+    border: 2px solid rgb(255, 0, 255);
+    border-radius: 5px;
+    padding: 10px;
+    color: rgb(141, 6, 141)
+}
+
+#second-box ul li button.try-btn {
+    background-color: purple;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: white
+}
+
+/*alert box-style*/
+div#alert-box {
+    margin-top: 10px;
+    background-color: rgb(8, 100, 174);
+    border-radius: 50px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+div#alert-box span {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+    text-underline-offset: 4px;
+}
+
+div#alert-box p i {
+    margin-left: 10px;
+    /* margin-top: 10px; */
+}
+
+div#alert-box button {
+    font-size: 20px;
+    color: white;
+    background-color: transparent;
+    border: none;
+}
+
+/* hero-section */
+div#hero-section-container {
+    padding: 20px 0;
+    /* border: 2px solid red; */
+    display: flex;
+    /* justify-content:space-evenly */
+    justify-content: space-between;
+}
+
+div#hero-section-container div#hero-section-content{
+    /* border:2px solid red; */
+    display: flex;  
+    flex-direction: column;
+    justify-content:Center;
+}
+
+div#hero-section-container div#hero-section-content .content{
+    margin-bottom: 25px;
+}
+
+div#hero-section-container div#hero-section-content h1{
+    font-size: 50px;
+    /* border:2px solid red; */
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+div#hero-section-container div#hero-section-content p{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+/* div#hero-section-container div#hero-section-image img{
+   border:2px solid red;
+   mix-blend-mode: multiply;
+} */
+
+div#hero-section-container .btn-container{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+
+div#hero-section-container .btn-container button{
+    min-width:40%;
+    min-height:46px
+}
+
+div#hero-section-container .btn-container button.try-btn2{
+    background-color: purple;
+    border: none;
+    border-radius: 5px;
+    padding:15px;
+    color: white
+}
+
+div#hero-section-container .btn-container button#google-btn{
+    background-color: rgb(14, 129, 223);
+    border: none;
+    border-radius: 5px;
+    padding: 5px 15px 5px 5px ;
+    margin-left: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} 
+
+div#hero-section-container .btn-container button#google-btn img{
+    height:30px;
+    width:47px;
+    border-radius: 2px;
+    margin-right: 10px;  
+} 
+
+div#brand-img-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* border:2px solid red; */
+}
+
+.img-container img{
+    /* border:2px solid red; */
+    mix-blend-mode: multiply;
+    /* height: 100px; */
+    width: 135px;
+}
+
+.red-circle img{
+    /* border:2px solid red; */
+    mix-blend-mode: multiply;
+    height: 50px;
+    width: 50px;
+}
+
+/*COOKIS BOX*/
+#cookies{
+    position: fixed;
+    right:10px;
+    bottom:10px;
+    background-color: white;
+    border-radius: 10px;
+    width:300px;
+    padding: 20px;
+    min-height:150px;
+    font-size: 14px;
+}
+
+#cookies #cross-button {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#cookies #cross-button button {
+   background-color: transparent;
+   border: none;
+   font-size: 20px;
+}
+
+#cookies p {
+    margin: 20px 0;
+}
+
+.cookies-btn{
+    width:100%;
+    display: block;
+    background-color: purple;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    color: white
+}
+
+
+
